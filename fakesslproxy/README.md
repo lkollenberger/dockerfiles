@@ -22,7 +22,11 @@ docker run --name=https --rm -d -e SERVER_NAME=thisisfake.com -e BACKEND_HOST=ht
 All of these are set as environment variables:
 
 `BACKEND_HOST`: mandatory, where to forward the request.
+
 `BACKEND_PORT`: defaults to `8080`.
+
 `SERVER_NAME`: `CN` used in the self-signed cert, defaults to `localhost`.
+
 `LISTEN_PORT`: defaults to `443`.
+
 `CERT` and `KEY`: path to certificate and key, in case you wanna use your own via a mounted volume or something.
